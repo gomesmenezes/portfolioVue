@@ -51,11 +51,13 @@ export default {
     padding: 1.25rem 1.25rem;
 }
 
+/* #f83620 #f9d432 */
+
 .card-content h1 {
     margin-top: 1.875rem;
-    font-family: 'Sora', 'Inter', sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-family: 'Gilroy', 'Inter', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
     margin: 0;
 }
 
