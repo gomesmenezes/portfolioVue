@@ -25,7 +25,7 @@ export default {
                 <h1>José Gomes</h1>
                 <h2>&lt;Front-End Developer /&gt;</h2>
                 <p>Apaixonado em transformar soluções em código</p>
-                <button class="btn-cv" @click="downloadFile">
+                <button class="btn4" @click="downloadFile">
                     <a>DOWNLOAD CV</a>
                     <img src="/public//iconArrow.png" alt="">
                 </button>
@@ -39,10 +39,11 @@ export default {
     border-radius: 1.25rem;
     width: 19.8125rem;
     margin: 2.5rem auto;
-    background: linear-gradient(to right, #A3D8FF, #6CB1FF);
+    background: linear-gradient(to right, #5761B2, #1FC5A8);
 }
 
 .card-content {
+    color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +54,6 @@ export default {
 .card-content h1 {
     margin-top: 1.875rem;
     font-family: 'Sora', 'Inter', sans-serif;
-    color: #1E1E1E;
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
@@ -61,7 +61,6 @@ export default {
 
 .card-content h2 {
     font-family: 'Sora', 'Inter', sans-serif;
-    color: #1E1E1E;
     font-size: 1.125rem;
     font-weight: 600;
     margin: 0 0 1.25rem;
@@ -69,13 +68,12 @@ export default {
 
 .card-content p {
     font-family: 'Inter', 'Poppins', sans-serif;
-    color: #1E1E1E;
     font-size: 1.125rem;
     font-weight: 400;
     margin: 1.875rem 0 1.875rem;
 }
 
-.btn-cv {
+/* .btn-cv {
     all: unset;
     outline: none;
     display: flex;
@@ -108,5 +106,52 @@ export default {
     width: 1.5rem;
     height: 1.5rem;
     cursor: pointer;
+} */
+
+.btn4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #836fff;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 1.125rem;
+    font-family: 'Inter', 'Poppins', sans-serif;
+    font-weight: 800;
+    border-radius: 1rem;
+}
+
+.btn4::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(92.83deg, #ff9966 0%, #ff5e62 100%);
+    z-index: -1;
+    filter: blur(4px);
+    transform: rotate(0deg);
+    transform-origin: center;
+    transition: transform 0.4s;
+    animation: rotateGradient 4s linear infinite;
+}
+
+@keyframes rotateGradient {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 </style>
