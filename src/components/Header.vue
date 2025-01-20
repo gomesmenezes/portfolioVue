@@ -1,6 +1,7 @@
 <script setup>
 import { Moon, Logs } from 'lucide-vue-next';
 import { ref } from 'vue';
+import PopUp from './PopUp.vue'; // Importa o componente PopUp
 
 const isOpenMenu = ref(false);
 const isOpenTheme = ref(false);
@@ -13,6 +14,9 @@ const toggleMenu = () => {
     isOpenMenu.value = !isOpenMenu.value;
 };
 
+const closeMenu = () => {
+    isOpenMenu.value = false;
+};
 </script>
 
 <template>
@@ -29,6 +33,9 @@ const toggleMenu = () => {
             </button>
         </div>
     </header>
+
+    <!-- Passa o estado e o método de fechamento como props -->
+    <PopUp v-if="isOpenMenu" @close="closeMenu" />
 </template>
 
 <style scoped>
