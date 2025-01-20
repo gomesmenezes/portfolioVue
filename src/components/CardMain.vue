@@ -116,6 +116,7 @@ export default {
     justify-content: center;
     position: relative;
     padding: 10px 20px;
+    gap: 10px;
     background-color: #836fff;
     color: #fff;
     font-size: 16px;
