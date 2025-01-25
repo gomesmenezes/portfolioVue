@@ -99,7 +99,7 @@ const links = {
 
 .polygono {
     position: absolute;
-    left: 3px;
+    left: 0px;
     top: 20px;
 }
 
