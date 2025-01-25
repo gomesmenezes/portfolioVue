@@ -23,7 +23,7 @@ const closeMenu = () => {
     <header>
         <div class="theme">
             <button class="btn-theme" :class="{ open: isOpenTheme }" @click="toggleTheme">
-                <Moon class="iconTheme" />
+                <Moon size={24} class="iconTheme" />
             </button>
         </div>
 
