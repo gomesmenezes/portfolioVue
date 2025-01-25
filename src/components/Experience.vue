@@ -1,4 +1,9 @@
-<script>
+<script setup>
+import reactCard from '../assets/img/react.png';
+import nodeCard from '../assets/img/node.png';
+import prismaCard from '../assets/img/prisma.png';
+import vueCard from '../assets/img/vue.png';
+import typescriptCard from '../assets/img/typescript.png';
 </script>
 
 <template>
@@ -10,13 +15,13 @@
         <div class="first-line">
             <ul>
                 <li class="react-card"> 
-                    <img src="/public///react.png" alt="">
+                    <img :src="reactCard" alt="React">
                 </li>
                 <li class="node-card">
-                    <img src="/public///node.png" alt="">
+                    <img :src="nodeCard" alt="Node.js">
                 </li>
                 <li class="prisma-card">
-                    <img src="/public///prisma.png" alt="">
+                    <img :src="prismaCard" alt="Prisma">
                 </li>
             </ul>
         </div>
@@ -24,14 +29,13 @@
         <div class="second-line">
             <ul>
                 <li class="vue-card"> 
-                    <img src="/public///vue.png" alt="">
+                    <img :src="vueCard" alt="Vue.js">
                 </li>
                 <li class="typescript-card">
-                    <img src="/public///typescript.png" alt="">
+                    <img :src="typescriptCard" alt="TypeScript">
                 </li>
             </ul>
         </div>
-
     </div>
 </template>
 

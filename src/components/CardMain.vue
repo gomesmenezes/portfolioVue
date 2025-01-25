@@ -1,21 +1,24 @@
-<script>
-export default {
-    methods: {
-        downloadFile() {
-            const fileUrl = "/cv-jose-gomes.pdf"; // Caminho do arquivo para download (relativo à pasta public)
-            const fileName = "cv-jose-gomes.pdf"; // Nome que o arquivo terá ao ser baixado pelo usuário
+<script setup>
+const downloadFile = () => {
+    const fileUrl = "/cv-jose-gomes.pdf";
+    const fileName = "cv-jose-gomes.pdf";
 
-            const link = document.createElement("a"); // Cria dinamicamente um elemento HTML <a>
-            link.href = fileUrl; // Define o atributo href do link para a URL do arquivo
-            link.download = fileName; // Define o atributo download com o nome do arquivo
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = fileName;
 
-            document.body.appendChild(link); // Adiciona o link ao corpo do documento
-            link.click(); // Dispara o clique no link para iniciar o download
+    document.body.appendChild(link);
+    link.click();
 
-            document.body.removeChild(link);
-        }
+    document.body.removeChild(link);
+}
+
+const links = {
+    url: {
+        iconArrow: '/src/assets/img/iconArrow.png',
     }
 }
+    
 </script>
 
 <template>
@@ -27,7 +30,7 @@ export default {
                 <p>Apaixonado em transformar soluções em código</p>
                 <button class="btn4" @click="downloadFile">
                     <a>DOWNLOAD CV</a>
-                    <img src="/public//iconArrow.png" alt="">
+                    <img :src="links.url.iconArrow" alt="">
                 </button>
             </div>
         </div>
