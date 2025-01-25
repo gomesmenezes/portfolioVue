@@ -97,22 +97,27 @@ li {
 
 .react-card {
     background-color: #38BDF8;
+    filter: drop-shadow(5px 5px 12px #38BDF8);
 }
 
 .node-card {
     background-color: #84CC16;
+    filter: drop-shadow(5px 5px 12px #84CC16);
 }
 
 .prisma-card {
     background-color: #00618A;
+    filter: drop-shadow(5px 5px 12px #00618A);
 }
 
 .vue-card {
     background-color: #3D986F;
+    filter: drop-shadow(5px 5px 12px #3D986F);
 }
 
 .typescript-card {
     background-color: #F0F2F3;
+    filter: drop-shadow(5px 5px 12px #c5ecfc);
 }
 
 </style>
