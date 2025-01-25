@@ -47,8 +47,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 42px;
-    width: 42px;
+    height: 58px;
+    width: 58px;
     background-color: #eeeeee;
     list-style: none;
     border-radius: 16px;
