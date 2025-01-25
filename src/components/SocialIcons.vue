@@ -15,17 +15,17 @@ const links = {
     <div class="social-icons">
         <ul>
             <li>
-                <a target="_blank" :href="links.link.github">
+                <a target="_blank" :href="links.link.github" rel="noopener noreferrer">
                     <Github color="#171515"/>
                 </a>
             </li>
             <li>
-                <a target="_blank" :href="links.link.linkedin">
+                <a target="_blank" :href="links.link.linkedin" rel="noopener noreferrer">
                     <Linkedin color="#0e76a8"/>
                 </a>
             </li>
             <li>
-                <a target="_blank" :href="links.link.mail">
+                <a target="_blank" :href="links.link.mail" rel="noopener noreferrer">
                     <Mail color="#000"/>
                 </a>
             </li>
