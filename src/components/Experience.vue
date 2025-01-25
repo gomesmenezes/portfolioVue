@@ -14,7 +14,7 @@ import typescriptCard from '../assets/img/typescript.png';
     <div class="cards-skills">
         <div class="first-line">
             <ul>
-                <li class="react-card"> 
+                <li class="react-card">
                     <img :src="reactCard" alt="React">
                 </li>
                 <li class="node-card">
@@ -28,7 +28,7 @@ import typescriptCard from '../assets/img/typescript.png';
 
         <div class="second-line">
             <ul>
-                <li class="vue-card"> 
+                <li class="vue-card">
                     <img :src="vueCard" alt="Vue.js">
                 </li>
                 <li class="typescript-card">
@@ -54,7 +54,7 @@ import typescriptCard from '../assets/img/typescript.png';
     margin: 0px;
 }
 
-.cards-skills .first-line  ul{
+.cards-skills .first-line ul {
     width: 327px;
     margin: 0 auto;
     gap: 25px;
@@ -64,7 +64,7 @@ import typescriptCard from '../assets/img/typescript.png';
     padding: 0;
 }
 
-.cards-skills .second-line  ul{
+.cards-skills .second-line ul {
     width: 327px;
     margin: 0 auto 60px;
     gap: 25px;
@@ -82,7 +82,11 @@ li {
     list-style: none;
 }
 
-.react-card, .node-card, .prisma-card, .vue-card, .typescript-card {
+.react-card,
+.node-card,
+.prisma-card,
+.vue-card,
+.typescript-card {
     display: flex;
     align-items: center;
     justify-content: center;
