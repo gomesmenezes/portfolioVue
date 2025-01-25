@@ -1,7 +1,6 @@
 <script setup>
-import { defineProps, defineEmits } from 'vue';
+import { defineEmits } from 'vue';
 
-// Recebe o evento para fechar o popup
 const emits = defineEmits(['close']);
 </script>
 

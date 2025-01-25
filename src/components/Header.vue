@@ -1,7 +1,7 @@
 <script setup>
 import { Moon, Logs } from 'lucide-vue-next';
 import { ref } from 'vue';
-import PopUp from './PopUp.vue'; // Importa o componente PopUp
+import PopUp from './PopUp.vue'; 
 
 const isOpenMenu = ref(false);
 const isOpenTheme = ref(false);
