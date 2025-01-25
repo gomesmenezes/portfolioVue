@@ -1,22 +1,31 @@
 <script setup lang="ts">
 import { Github, Linkedin, Mail } from 'lucide-vue-next';
+
+const links = {
+    link: {
+        github: 'https://github.com/gomesmenezes',
+        linkedin: 'https://www.linkedin.com/in/jos%C3%A9-gomes-de-menezes/',
+        mail: 'mailto:gomesxdev@gmail.com'
+    }
+}
+
 </script>
 
 <template>
     <div class="social-icons">
         <ul>
             <li>
-                <a target="_blank" href="https://github.com/gomesmenezes">
+                <a target="_blank" :href="links.link.github">
                     <Github color="#171515"/>
                 </a>
             </li>
             <li>
-                <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-gomes-de-menezes/">
+                <a target="_blank" :href="links.link.linkedin">
                     <Linkedin color="#0e76a8"/>
                 </a>
             </li>
             <li>
-                <a target="_blank" href="mailto:gomesxdev@gmail.com">
+                <a target="_blank" :href="links.link.mail">
                     <Mail color="#000"/>
                 </a>
             </li>

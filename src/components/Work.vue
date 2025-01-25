@@ -1,4 +1,11 @@
 <script setup>
+const links = {
+    urls: {
+        logoSingle: '/src/assets/img/single.png',
+        urlPolygono: '/src/assets/img/polygono.png',
+    }
+}
+
 </script>
 
 <template>
@@ -11,13 +18,13 @@
             <div class="time-gap">
                 <div class="line"></div>
                 <div class="polygono">
-                    <img src="/public////polygono.png" alt="">
+                    <img :src="links.urls.urlPolygono" alt="">
                 </div>
             </div>
 
             <div class="card-work-place">
                 <div class="logo-place">
-                    <img src="/public//////single.png" alt="">
+                    <img :src="links.urls.logoSingle" alt="">
                 </div>
                 <div class="text">
                     <h1>Front-End Developer</h1>
