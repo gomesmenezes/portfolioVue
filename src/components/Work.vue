@@ -1,8 +1,11 @@
-<script setup>
+<script setup lang="ts">
+import logoSingle from '../assets/img/single.png';
+import polygono from '../assets/img/polygono.png';
+
 const links = {
     urls: {
-        logoSingle: '/src/assets/img/single.png',
-        urlPolygono: '/src/assets/img/polygono.png',
+        logoSingle,
+        polygono
     }
 }
 
@@ -18,7 +21,7 @@ const links = {
             <div class="time-gap">
                 <div class="line"></div>
                 <div class="polygono">
-                    <img :src="links.urls.urlPolygono" alt="">
+                    <img :src="links.urls.polygono" alt="">
                 </div>
             </div>
 

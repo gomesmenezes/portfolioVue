@@ -1,4 +1,6 @@
 <script setup>
+import iconArrow from '../assets/img/iconArrow.png';
+
 const downloadFile = () => {
     const fileUrl = "/cv-jose-gomes.pdf";
     const fileName = "cv-jose-gomes.pdf";
@@ -14,8 +16,8 @@ const downloadFile = () => {
 }
 
 const links = {
-    url: {
-        iconArrow: '/src/assets/img/iconArrow.png',
+    urls: {
+        iconArrow,
     }
 }
     
@@ -30,7 +32,7 @@ const links = {
                 <p>Apaixonado em transformar soluções em código</p>
                 <button class="btn4" @click="downloadFile">
                     <a>DOWNLOAD CV</a>
-                    <img :src="links.url.iconArrow" alt="">
+                    <img :src="links.urls.iconArrow" alt="Icone Flecha">
                 </button>
             </div>
         </div>
