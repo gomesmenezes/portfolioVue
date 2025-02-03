@@ -1,7 +1,7 @@
 <script setup>
-import { defineEmits } from 'vue';
+import { defineEmits } from "vue";
 
-const emits = defineEmits(['close']);
+const emits = defineEmits(["close"]);
 </script>
 
 <template>
@@ -35,7 +35,6 @@ const emits = defineEmits(['close']);
   justify-content: center;
   align-items: center;
   z-index: 1000;
-
 }
 
 .popup-content {
@@ -44,34 +43,34 @@ const emits = defineEmits(['close']);
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   backdrop-filter: blur(4.5px);
---webkit-backdrop-filter: blur(4.5px);
---moz-backdrop-filter: blur(4.5px);
-background-color: rgba(221, 219, 219, 0.5);
+  --webkit-backdrop-filter: blur(4.5px);
+  --moz-backdrop-filter: blur(4.5px);
+  background-color: rgba(221, 219, 219, 0.5);
 }
 
-.popup-content ul{
+.popup-content ul {
   all: none;
   list-style: none;
   padding: 0;
   font-size: 32px;
-  font-family: 'Gilroy', 'Inter', sans-serif;
+  font-family: "Gilroy", "Inter", sans-serif;
   font-weight: 700;
 }
 
-.popup-content ul li a{
+.popup-content ul li a {
   all: unset;
 }
 
-.popup-content ul li a:hover{
+.popup-content ul li a:hover {
   color: #eeeeee;
 }
 
-.close-btn  {
+.close-btn {
   margin-top: 10px;
   padding: 10px 20px;
   width: 100%;
@@ -82,12 +81,10 @@ background-color: rgba(221, 219, 219, 0.5);
   animation: gradientButton 10s ease infinite;
   cursor: pointer;
   font-size: 22px;
-  font-family: 'Gilroy', 'Inter', sans-serif;
+  font-family: "Gilroy", "Inter", sans-serif;
   font-weight: 700;
   border: none;
 }
-
-
 
 @keyframes gradientButton {
   0% {
