@@ -1,3 +1,4 @@
+@import "tailwindcss";
 @font-face {
   font-family: "Gilroy";
   src: url("../assets/fonts/Gilroy-Light.ttf") format("truetype");
